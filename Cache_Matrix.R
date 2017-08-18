@@ -14,7 +14,8 @@ makeCacheMatrix <- function(x = matrix()) {
          getsolve = getsolve)
 }
 
-cacheSolve <- function(x, ...) {  # Funcion que calcula la inversa
+# Funcion que calcula la inversa
+cacheSolve <- function(x, ...) {  
     m <- x$getsolve() #Cequea si existe la matriz
     if(!is.null(m)) { # si no existe devuelve el mensaje
         message("getting cached data")
